@@ -17,7 +17,9 @@
       .form{
         margin-top: 30px;
         margin-left: 20px;
-
+      }
+      .form-inline{
+        margin-left: 20px;
       }
     </style>
 
@@ -132,11 +134,28 @@
             <option>3</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="formControlRange">Auto Score</label>
-          <input type="range" class="custom-range" min="0" max="12" step="1" id="customRange">
-          <output for="customRange" onforminput="customRange.valueAsNumber;"></output>
+    </form>
+    <form class="form-inline">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" id="match" aria-describedby="match" placeholder="Enter Match #">
         </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <input type="text" class="form-control" id="teleopInput" aria-describedby="teleopInput" placeholder="Enter Team #">
+        </div>
+    </form>
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <input type="text" class="form-control" id="autoInput" aria-describedby="autoInput" placeholder="Enter Auto Score">
+      </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <input type="text" class="form-control" id="teleopInput" aria-describedby="teleopInput" placeholder="Enter Teleop Score">
+        </div>
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" id="endInput" aria-describedby="endInput" placeholder="Enter Endgame Score">
+        </div>
+    </form>
+    <form class="form">
+        <button type="submit" id="submitButton" class="btn btn-primary mb-2">Submit</button>
     </form>
   </body>
 </html>
